@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
+    <!-- This is the head -->
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- This is the body -->
+    <div>
 
-<h1>This is a title</h1>
+        <h1 id="title">This is a title</h1>
+        <p>This is a paragraph</p>
+        <p>This is a <a href="https://www.google.com/"> link to google</a></p>
+        <p> This is a link to <a href="page2.html">page 2</a></p>
+        <p> This is a link to <a href="list.html">the list</a></p>
+        <p> This is a link to <a href="tab.html">the table</a></p>
 
-<p>This is a paragraph</p>
+        <!-- A paragraph -->
+        <p class="paragraph">bla bla bla</p>
 
-<p>This is a <a href="https://www.google.com/"> link to google</a></p>
+        <div id="content">
+            <!-- A Button -->
+            <input type="button" value="Change the Title" id="myButton1">
+            <!-- A text box -->
+            <input type="text" value="Type the new title here" id="myText1">
+            <!-- Anoter Button -->
+            <input type="button" value="Add paragraph" id="myButton2">
+            <!-- Another text box -->
+            <input type="text" value="Type new paragraph here" id="myText2">
+        </div>
 
-<p> This is a link to <a href="page2.html">page 2</a></p>
+    </div>
 
-<!-- This is how to write comments -->
 
-<p> This is a link to <a href="list.html">the list</a></p>
-
-<p> This is a link to <a href="tab.html">the table</a></p>
+    <!-- The script can be run here or in the head -->
+    <script src="eventhtml.js"></script>
 
 </body>
+
 </html>
