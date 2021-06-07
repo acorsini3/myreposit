@@ -27,11 +27,17 @@ function addParagraph() {
     content.appendChild(newParagraph);
     newParagraph.className = "newElement";
 
+    //store the element in the local storage
+    const paragraphs = document.getElementsByClassName("newElement");
+    count = paragraphs.length;
+    console.log(paragraphs.length);
+    localStorage.setItem(count, myText.value);
+
 }
 addButton.addEventListener("click", addParagraph);
 
 
-//remove the first element
+//remove the last element from the list AND in local storage
 
 function removeParagraph() {
     const paragraphs = document.getElementsByClassName("newElement");
@@ -39,8 +45,10 @@ function removeParagraph() {
     if (paragraphs.length > 0) {
         const last = paragraphs.length - 1;
         content.removeChild(paragraphs[last]);
+        console.log(paragraphs.length);
+        localStorage.removeItem(last + 1);
     }
-    console.log(paragraphs.length);
+
 }
 removeButton.addEventListener("click", removeParagraph);
 
@@ -52,6 +60,7 @@ function clearAll() {
     while (paragraphs.length > 0) {
         const last = paragraphs.length - 1;
         content.removeChild(paragraphs[last]);
+        localStorage.clear();
     }
 }
 clearButton.addEventListener("click", clearAll);
