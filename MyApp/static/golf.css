@@ -1,8 +1,10 @@
 /* image background */
 
-div {
+body {
     background-image: url("background.jpg");
 }
+
+.title {}
 
 
 /* main style */
