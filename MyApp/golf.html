@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/golf.css">
+    <title>document</title>
+</head>
+
+
+
+<body>
+
+
+    <div>
+
+        <!--TITLE-->
+        <p id="title" style="text-align:center">
+            <b>THE GOLF INDEX CALCULATION APP</b>
+        </p>
+        <!-- TEXT BOX + BUTTON-->
+        <div id="textBox" style="text-align:center">
+            <input type="text" placeholder="Enter your name" id="myText">
+            <input type="button" value="Enter" id="addButton">
+
+        </div>
+        <!-- WELCOME USER USING JAVASCRIPT-->
+        <div id="content">
+            <script src="static/message.js"></script>
+        </div>
+
+        <!-- ADD -->
+        <form action="/add" method="get" style="text-align:center">
+            <input type="text" placeholder="Enter a new score" name="n" id="score">
+            <input type="submit" value="Add" style="background-color:rgb(158, 206, 94); font-size: 20px;">
+        </form>
+
+        <!-- VIEW -->
+        <p style="text-align:center">
+            <a href="scores">
+                <input type="submit" value="View all scores" style="background-color:rgb(158, 206, 94); font-size: 20px;">
+            </a>
+        </p>
+
+        <!-- CALCULATE -->
+        <form action="/calculate" method="get" style="text-align:center">
+            <input type="submit" value="Calcute Index" style="background-color:rgb(158, 206, 94); font-size: 20px;">
+        </form>
+    </div>
+</body>
+
+</html>
